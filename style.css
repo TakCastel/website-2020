@@ -1,0 +1,36 @@
+* {
+  margin: 0
+}
+
+#app {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #cfcfcf, rgba(255, 255, 255, 0));
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3em;
+  position: relative;
+  z-index: 1;
+}
+
+.title:after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background: #11ead6;
+  z-index: -1;
+  /* border-radius: 10px; */
+  transform: skew(17deg, -6deg);
+}
+
+.subtitle {
+  font-size: 1.5em;
+}
